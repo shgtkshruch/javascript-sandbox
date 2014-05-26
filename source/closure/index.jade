@@ -1,0 +1,14 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    title Closure
+    link(rel="stylesheet", href="./style.css")
+  body
+    table#js-table
+      - for (var i = 0; i < 3; i++)
+        tr
+          - for (var j = 0; j < 3; j++)
+            td #{(i * 3) + j + 1}
+    script(src="./script.js")
+
